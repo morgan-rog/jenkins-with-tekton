@@ -1,0 +1,10 @@
+pipeline{
+    agent kubernetes
+    stages {
+        stage('build'){
+            steps {
+                checkout scm
+            }
+        }
+    }
+}
